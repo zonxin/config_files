@@ -1,0 +1,49 @@
+"3.10.1 (created: 2015/08/25 00:41:59)
+
+noremap a <Nop>
+noremap A <Nop>
+noremap <F1> <Nop>
+noremap w :winopen 
+noremap dd ]]
+noremap df ]f
+noremap ee [[
+noremap ef [f
+noremap j 10j
+noremap k 10k
+
+"=== vimfx ===
+noremap x :tabclose<CR>
+noremap X u
+noremap H gT
+noremap L gt
+noremap gL :tabm<Space>+1<Return>
+noremap gH :tabm<Space>-1<Return>
+"=== firefox 默认 ===
+noremap <C-f> i<C-f>
+"=== 插入模式 ===
+inoremap <C-a> <Insert><C-a><Insert>
+"=== 自定义命令 ===
+command! baidu tabopen https://www.baidu.com/
+command! google tabopen https://www.google.com.hk/
+command! wiki tabopen https://www.wikipedia.org/
+command! scholar tabopen http://scholar.glgoo.org/
+noremap sb :baidu<Return> 
+noremap sg :google<Return>
+noremap sw :wiki<Return>
+noremap ss :scholar<Return>
+"=== 美化 === 
+noremap <C-b> <S-Space>
+" 设置一些选项
+set fc
+set yankencodedurl
+set hintchars=gfdsatrewqbvcxzhjklyuiopnm
+set "nextpattern=\\bnext\\b,^>$,^(>>|»)$,^(>|»),(>|»)$,\\bmore\\b,下一页"
+set "previouspattern=\\bprev|previous\\b,^<$,^(<<|«)$,^(<|«),(<|«)$,上一页"
+
+" 配色
+hi HintElem             background-color: #fffac6; border-radius: 2px;
+hi Hint                 font-family: "Lucida Grande", "Segoe UI", sans-serif; font-size: 11px; font-weight: bold; background: -moz-linear-gradient(top, #6BA7EF, #3163AA); text-shadow: 0 1px #1D3C66; text-transform: uppercase; color: white; background-color: red; padding: 2px 5px; border-radius: 3px; border: 1px solid #3366AD;
+
+source! /home/student05/.vimperatorrc.local
+
+" vim: set ft=vimperator:
