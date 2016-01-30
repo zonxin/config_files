@@ -1,0 +1,14 @@
+[i18n]
+	commitencoding = utf-8
+	logoutputencoding = utf-8
+[user]
+	email = 0zonxin0@163.com
+	name = zonxin
+[gui]
+	encoding = utf-8
+[core]
+	quotepath = false
+[i18n "commit"]
+	encoding = utf-8
+[alias]
+	lg = log --graph

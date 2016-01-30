@@ -4,16 +4,20 @@ noremap a <Nop>
 noremap A <Nop>
 noremap <F1> <Nop>
 noremap w :winopen 
-noremap dd ]]
-noremap df ]f
-noremap ee [[
-noremap ef [f
+noremap >> ]]
+noremap >f ]f
+noremap << [[
+noremap <f [f
 noremap j 10j
 noremap k 10k
 
+" tabgroups 快捷键
+noremap ga :tabgroups add<Space>
+noremap gs :tabgroups switch<Space>
+
 "=== vimfx ===
 noremap x :tabclose<CR>
-noremap X u
+noremap X :tabclose -select left<CR>
 noremap H gT
 noremap L gt
 noremap gL :tabm<Space>+1<Return>
