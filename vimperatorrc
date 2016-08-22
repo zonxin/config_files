@@ -4,20 +4,16 @@ noremap a <Nop>
 noremap A <Nop>
 noremap <F1> <Nop>
 noremap w :winopen 
-noremap >> ]]
-noremap >f ]f
-noremap << [[
-noremap <f [f
+noremap dd ]]
+noremap df ]f
+noremap ee [[
+noremap ef [f
 noremap j 10j
 noremap k 10k
 
-" tabgroups 快捷键
-noremap ga :tabgroups add<Space>
-noremap gs :tabgroups switch<Space>
-
 "=== vimfx ===
 noremap x :tabclose<CR>
-noremap X :tabclose -select left<CR>
+noremap X u
 noremap H gT
 noremap L gt
 noremap gL :tabm<Space>+1<Return>
@@ -35,14 +31,15 @@ noremap sb :baidu<Return>
 noremap sg :google<Return>
 noremap sw :wiki<Return>
 noremap ss :scholar<Return>
+noremap sm :tabopen http://dir.scmor.com/google/<Return>
 "=== 美化 === 
 noremap <C-b> <S-Space>
 " 设置一些选项
 set fc
 set yankencodedurl
 set hintchars=gfdsatrewqbvcxzhjklyuiopnm
-set "nextpattern=\\bnext\\b,^>$,^(>>|»)$,^(>|»),(>|»)$,\\bmore\\b,下一页"
-set "previouspattern=\\bprev|previous\\b,^<$,^(<<|«)$,^(<|«),(<|«)$,上一页"
+set nextpattern=\\bnext\\b,^>$,^(>>|»)$,^(>|»),(>|»)$,\\bmore\\b,\s*下一页|下一张|下一篇|下页|后一页|后页\s*
+set previouspattern=\\bprev|previous\\b,^<$,^(<<|«)$,^(<|«),(<|«)$,\s*上一页|上一张|上一篇|上页|前一页|前页\s*
 
 " 配色
 hi HintElem             background-color: #fffac6; border-radius: 2px;
