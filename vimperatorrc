@@ -24,7 +24,7 @@ noremap <C-f> i<C-f>
 inoremap <C-a> <Insert><C-a><Insert>
 "=== 自定义命令 ===
 command! baidu tabopen https://www.baidu.com/
-command! google tabopen http://www.liu16.com/g.html
+command! google tabopen http://www.google.com.hk/
 command! wiki tabopen https://www.wikipedia.org/
 command! scholar tabopen http://scholar.glgoo.org/
 noremap sb :baidu<Return> 
